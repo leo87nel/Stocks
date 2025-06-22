@@ -4,15 +4,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-#Create sample DataFrame manually
-df = pd.DataFrame({
-    "P/E Ratio": [10, 15, 20],
-    "ROE": [0.1, 0.2, 0.15],
-    "Sector": ["Tech", "Healthcare", "Finance"],
-    "Country": ["USA", "USA", "Canada"],
-    "Company Name": ["A Corp", "B Corp", "C Corp"],
-    "Ticker": ["A", "B", "C"]
-})
+df = pd.read_csv("fundamentals_with_metadata.csv")
 
 st.title("📊 Crossplot Dashboard")
 
